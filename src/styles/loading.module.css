@@ -1,0 +1,60 @@
+.loadingContainer{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+.backgroundFlower{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.mainLogo{
+
+}
+.loadingDiv{
+    margin-top: 50px;
+}
+.loadingDiv > img{
+    animation: loading-animation 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes loading-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.loadingContainer{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    outline: none;
+}
+
+
+@media (max-width: 425px) {
+    .backgroundFlower{
+        width: 300px !important;
+    }
+    .backgroundFlower > img{
+        width: 100% !important;
+    }
+}
+@media (max-width: 375px) {
+    .backgroundFlower{
+        width: 250px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .backgroundFlower{
+        width: 200px !important;
+    }
+}

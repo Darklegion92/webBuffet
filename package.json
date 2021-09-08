@@ -1,0 +1,69 @@
+{
+  "name": "proyectoprueba",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "docs": "jsdoc -c ./docu.jsdoc.json -R README.md -t ./node_modules/ink-docstrap/template ./pages/orders --debug",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@date-io/moment": "1.x",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.3.10",
+    "@risingstack/react-easy-state": "^6.3.0",
+    "axios": "^0.21.0",
+    "formik": "^2.2.9",
+    "ink-docstrap": "1.3.2",
+    "js-cookie": "^2.2.1",
+    "jsdoc": "3.6.7",
+    "material-ui-search-bar": "^1.0.0",
+    "moment": "^2.29.1",
+    "next": "^10.0.7",
+    "next-pwa": "^3.1.5",
+    "numeral": "^2.0.6",
+    "qs": "^6.10.1",
+    "react": "^17.0.1",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.1",
+    "react-hooks-helper": "^1.6.0",
+    "react-image-lightbox": "^5.1.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-material-ui-carousel": "^2.1.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-sanitized-html": "^2.0.0",
+    "react-select": "^4.2.1",
+    "react-slick": "^0.27.13",
+    "react-toast-notifications": "^2.4.3",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "sanitize-html": "^2.3.3",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.9"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeevh/repoTolouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angeevh/repoTolouse/issues"
+  },
+  "homepage": "https://github.com/angeevh/repoTolouse#readme",
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}

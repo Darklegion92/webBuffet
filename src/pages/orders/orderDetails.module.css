@@ -1,0 +1,88 @@
+.cardStyles{
+    padding-top: 60px;
+}
+
+.margin-card {
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.margin-catalog {
+    padding: 5px 10px;
+}
+
+.btn-continue{
+    color: #ffff !important;
+    background-color: #E0ABA1 !important;
+    border-radius: 20px !important;
+}
+.mb-10{
+    margin:20px auto !important;
+}
+.cardStyles2{
+    margin-top: 10px;
+    padding-top: 50px;
+}
+
+.margin-card2 {
+    margin-top: 0%;
+}
+
+.mr-10C{
+    margin: 10px 0px;
+    width: 100%;
+}
+.order-PrContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-PrContent{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.aStyle{
+    text-decoration: none;
+    font-weight: bold;
+    color:#DC9F95;
+    align-items: center;
+}
+
+.labelStyle{
+    font-weight: bold;
+}
+
+.paymentMethodTitle{
+
+    font-weight: bold;
+}
+
+.internalFont{
+    font-weight: bold;
+}
+
+.title{
+    font-size: 16px;
+}
+
+.colorDecoration1{
+    color: #DC9F95;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.colorDecoration2{
+    color: #FF7F00;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.lblSize{
+    font-size: 14px;
+}
+.aLink{
+    text-decoration: none;
+    color: white;
+}
