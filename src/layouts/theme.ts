@@ -1,15 +1,15 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-const primaryColor = '#DC9F95'
-export const MuiTheme = createMuiTheme({
+import { createTheme } from '@material-ui/core/styles';
+const primaryColor = '#8d292b'
+export const MuiTheme = createTheme({
     palette: {
         primary: {
             main: primaryColor,
             contrastText: "#fff",
-            light: 'rgba(220,159,149,0.31)',
+            light: 'rgba(141,41,43,0.31)',
 
         },
         secondary: {
-            main: '#000000', contrastText: "#fff"
+            main: '#fc2a35', contrastText: "#fff"
         },
         background: {
             default: '#ffff'
@@ -55,7 +55,7 @@ export const MuiTheme = createMuiTheme({
             root: {
                 color: "white",
                 "&$selected": {
-                    color: "#DC9F95",
+                    color: "#8d292b",
                     boxShadow: "none",
                 },
             },
