@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.primary.main,
         display: 'flex',
         alignItems: 'center',
-        position: 'fixed',
+        position: 'relative',
         width: '100%',
         bottom: 0,
         zIndex: 99,

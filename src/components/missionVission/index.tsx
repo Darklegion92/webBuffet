@@ -1,6 +1,6 @@
 import { useStyles } from './styles'
 import React from 'react'
-import { Card, Grid, Icon, Typography } from '@material-ui/core'
+import { Grid, Icon, Typography } from '@material-ui/core'
 
 const MissionVission = () => {
     const classes = useStyles()
