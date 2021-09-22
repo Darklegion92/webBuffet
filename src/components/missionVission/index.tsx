@@ -23,7 +23,7 @@ const MissionVission = () => {
             <Grid item xs={12} lg={6} className={classes.gridItem}>
                 <div className={classes.cardRight}>
                     <Icon className={classes.icon}>
-                        gps_fixed
+                        visibility
                     </Icon>
                     <Typography variant="h3" component="h2" className={classes.text}>
                         VISIÓN

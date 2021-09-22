@@ -20,7 +20,6 @@ export const useStyles = makeStyles((theme) => ({
         width: 550,
         minHeight: 550,
         padding: 50,
-        marginBottom: 50,
     },
     cardLeft: {
         display: 'flex',
@@ -33,7 +32,6 @@ export const useStyles = makeStyles((theme) => ({
         width: 550,
         minHeight: 550,
         padding: 50,
-        marginBottom: 50,
     },
     text: {
         color: theme.palette.primary.main,
