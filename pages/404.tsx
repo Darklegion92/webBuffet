@@ -4,8 +4,8 @@ import React from 'react'
 const Error404 = () => {
     return (
         <Container style={{ minHeight: '83vh' }}>
-            <Grid container alignContent="center" justify="center" style={{ paddingTop: '50%' }}>
-                <Grid item justify="center" style={{ display: 'flex', marginBottom: 10 }}>
+            <Grid container alignContent="center" style={{ paddingTop: '50%' }}>
+                <Grid item style={{ display: 'flex', marginBottom: 10 }}>
                     <img
                         width="20%"
                         src="/assets/images/flor.png"

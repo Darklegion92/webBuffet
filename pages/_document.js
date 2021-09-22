@@ -13,8 +13,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          {/* Carrousel */}
-
+          {/* matrerial icons */}
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GTM}`}></script>
           <script

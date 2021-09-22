@@ -2,40 +2,20 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: theme.palette.secondary.main,
-        borderBottomLeftRadius: 0,
-        borderBottomRightRadius: 0,
+        backgroundColor: theme.palette.primary.main,
         display: 'flex',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        position: 'sticky',
-        height: 550,
+        position: 'fixed',
         width: '100%',
-        top: 0,
+        bottom: 0,
         zIndex: 99,
-        [theme.breakpoints.down("md")]: {
-            padding: '0 5%',
-        }
+        padding: '0 100px',
     },
-    action: {
-        color: 'white',
+    text: {
+        color: theme.palette.primary.contrastText,
     },
-    cart: {
-        color: 'white',
-        textDecoration: 'none',
-        textAlign: 'center',
-        paddingTop: 12,
-        [theme.breakpoints.down("sm")]: {
-            display: 'none'
-        }
-
-    },
-    logo: {
-        width: 130,
-        [theme.breakpoints.down("md")]: {
-            width: 120,
-
-        }
+    icon: {
+        fontSize: 30,
     }
 }
 ));
