@@ -1,9 +1,8 @@
-import { ActionRedux, CartState } from '@/models/redux.model';
 import {
     cart
 } from '../actions/actionsTypes';
 
-export const defaultState: CartState = {
+export const defaultState: any = {
     cartData: {
         summary: {
             total: 0
@@ -12,7 +11,7 @@ export const defaultState: CartState = {
     loading: true
 };
 
-const Cart = (state = defaultState, action: ActionRedux) => {
+const Cart = (state = defaultState, action: any) => {
     switch (action.type) {
         case cart.get:
             return {

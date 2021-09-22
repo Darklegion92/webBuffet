@@ -1,4 +1,3 @@
-import { getCookie } from "@/lib/session";
 import axios, { Method } from "axios";
 import { responseErrors } from '../util';
 import Router from "next/router";
@@ -13,7 +12,7 @@ export const request = (params: ParamsType) => {
     const { url, method, data, headers = {}, callback } = params
     return new Promise(function (resolve: any, reject: any) {
         var _headers, body;
-        const jwt = getCookie("jwt")
+        const jwt = '' //getCookie("jwt")
         const token = jwt ? decodeURIComponent(jwt).replace(/"/g, '').replace('[', '').replace(']', '').trim() : '';
         if (data && data.__proto__.constructor === window.FormData) {
             _headers = {
