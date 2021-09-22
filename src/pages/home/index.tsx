@@ -1,3 +1,4 @@
+import CardLawyer from '@/components/cardLawyer'
 import CardServices from '@/components/cardServices'
 import Carousel from '@/components/carousel'
 import MissionVission from '@/components/missionVission'
@@ -12,6 +13,7 @@ const Home = () => {
             <div className={classes.carousel} />
             <MissionVission />
             <CardServices />
+            <CardLawyer />
         </div>
     )
 }

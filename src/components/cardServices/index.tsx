@@ -79,7 +79,7 @@ const data = [
 const CardServices = () => {
     const classes = useStyles()
     return (
-        <Grid container className={classes.root}>
+        <Grid container justifyContent="center" className={classes.root}>
             {data.map(dato =>
                 <Grid item xs={4} lg={3}>
                     <div
@@ -94,7 +94,7 @@ const CardServices = () => {
                                 {dato.text}
                             </Typography>
                             {dato.list.map(item =>
-                                <Typography variant="caption" component="h1">
+                                <Typography key={item} variant="caption" component="h1">
                                     - {item}
                                 </Typography>)}
                         </div>
