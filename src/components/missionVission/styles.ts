@@ -1,41 +1,48 @@
 import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
-    root: {
-        backgroundColor: theme.palette.secondary.main,
-        borderBottomLeftRadius: 0,
-        borderBottomRightRadius: 0,
+    container: {
+        paddingTop: 30,
+    },
+    gridItem: {
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
-        position: 'sticky',
-        height: 550,
-        width: '100%',
-        top: 0,
-        zIndex: 99,
-        [theme.breakpoints.down("md")]: {
-            padding: '0 5%',
-        }
     },
-    action: {
-        color: 'white',
+    cardRight: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        border: 'solid 1px #e7e4e3',
+        "-webkit-box-shadow": "13px 13px 16px -3px rgba(0,0,0,0.22);-moz-box-shadow: 13px 13px 16px -3px rgba(0,0,0,0.22);box-shadow: 13px 13px 16px -3px rgba(0,0,0,0.22);",
+        borderBottomRightRadius: '100px',
+        borderTopLeftRadius: '100px',
+        width: 550,
+        minHeight: 550,
+        padding: 50,
+        marginBottom: 50,
     },
-    cart: {
-        color: 'white',
-        textDecoration: 'none',
-        textAlign: 'center',
-        paddingTop: 12,
-        [theme.breakpoints.down("sm")]: {
-            display: 'none'
-        }
-
+    cardLeft: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        border: 'solid 1px #e7e4e3',
+        "-webkit-box-shadow": "13px -5px 16px -3px rgba(0,0,0,0.22);        -moz-box-shadow: 13px -5px 16px -3px rgba(0,0,0,0.22);        box-shadow: 13px -5px 16px -3px rgba(0,0,0,0.22);",
+        borderBottomLeftRadius: '100px',
+        borderTopRightRadius: '100px',
+        width: 550,
+        minHeight: 550,
+        padding: 50,
+        marginBottom: 50,
     },
-    logo: {
-        width: 130,
-        [theme.breakpoints.down("md")]: {
-            width: 120,
-
-        }
+    text: {
+        color: theme.palette.primary.main,
+    },
+    paragraph: {
+        textAlign: 'justify',
+    },
+    icon: {
+        fontSize: 50,
     }
 }
 ));

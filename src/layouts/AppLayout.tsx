@@ -9,7 +9,7 @@ const AppLayout = (props: any) => {
     <MuiThemeProvider theme={MuiTheme}>
       <Header />
       {props.children}
-      <Footer />
+     {/* <Footer />*/}
     </MuiThemeProvider>
   )
 }
