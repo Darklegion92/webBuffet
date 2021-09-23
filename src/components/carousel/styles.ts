@@ -15,7 +15,10 @@ export const useStyles = makeStyles((theme) => ({
         left: 0,
         width: '100%',
         zIndex: 2,
-        height: 550
+        height: 550,
+        [theme.breakpoints.down("md")]: {
+            height: 268,
+        }
     }
 }
 ));

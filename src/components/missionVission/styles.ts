@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     container: {
         paddingTop: 30,
         [theme.breakpoints.down("md")]: {
-            padding: '30px 20px',
+            padding: '30px 10px',
         }
     },
     gridItem: {
@@ -45,6 +45,8 @@ export const useStyles = makeStyles((theme) => ({
             padding: 30,
             minHeight: 500,
             justifyContent: 'center',
+            marginBottom: 25,
+
         }
     },
     text: {

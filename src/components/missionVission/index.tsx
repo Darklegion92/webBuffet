@@ -5,7 +5,7 @@ import { Grid, Icon, Typography } from '@material-ui/core'
 const MissionVission = () => {
     const classes = useStyles()
     return (
-        <Grid container justifyContent="center" className={classes.container} spacing={6} >
+        <Grid container justifyContent="center" className={classes.container} >
             <Grid item xs={12} lg={6} className={classes.gridItem}>
                 <div className={classes.cardLeft}>
                     <Icon className={classes.icon}>

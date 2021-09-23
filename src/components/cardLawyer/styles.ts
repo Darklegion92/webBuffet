@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
         width: '100%',
         marginTop: 25,
     },
-    item:{
+    item: {
         display: 'flex',
         justifyContent: 'center',
     },
@@ -18,5 +18,11 @@ export const useStyles = makeStyles((theme) => ({
         borderColor: theme.palette.primary.main,
         width: 200,
         height: 200,
+        marginBottom: 80,
+        [theme.breakpoints.down("md")]: {
+            width: 100,
+            height: 100,
+            marginBottom: 40,
+        }
     }
 }));
