@@ -3,11 +3,15 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles((theme) => ({
     container: {
         paddingTop: 30,
+        [theme.breakpoints.down("md")]: {
+            padding: '30px 20px',
+        }
     },
     gridItem: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+
     },
     cardRight: {
         display: 'flex',
@@ -20,6 +24,11 @@ export const useStyles = makeStyles((theme) => ({
         width: 550,
         minHeight: 550,
         padding: 50,
+        [theme.breakpoints.down("md")]: {
+            padding: 30,
+            minHeight: 500,
+            justifyContent: 'center',
+        }
     },
     cardLeft: {
         display: 'flex',
@@ -32,15 +41,29 @@ export const useStyles = makeStyles((theme) => ({
         width: 550,
         minHeight: 550,
         padding: 50,
+        [theme.breakpoints.down("md")]: {
+            padding: 30,
+            minHeight: 500,
+            justifyContent: 'center',
+        }
     },
     text: {
         color: theme.palette.primary.main,
+        [theme.breakpoints.down("md")]: {
+            fontSize: 20,
+        }
     },
     paragraph: {
         textAlign: 'justify',
+        [theme.breakpoints.down("md")]: {
+            fontSize: 12,
+        }
     },
     icon: {
         fontSize: 50,
+        [theme.breakpoints.down("md")]: {
+            fontSize: 20,
+        }
     }
 }
 ));
