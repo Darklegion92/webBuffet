@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
         zIndex: 2,
         height: 550,
         [theme.breakpoints.down("md")]: {
-            height: 268,
+            height: 300,
         }
     }
 }
