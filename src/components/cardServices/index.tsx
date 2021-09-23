@@ -81,7 +81,7 @@ const CardServices = () => {
     return (
         <Grid container justifyContent="center" className={classes.root}>
             {data.map(dato =>
-                <Grid item xs={4} lg={3}>
+                <Grid item xs={6} lg={3}>
                     <div
                         style={{ backgroundColor: dato.color, color: 'white' }}
                         className={classes.card}
