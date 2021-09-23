@@ -63,6 +63,5 @@ export const useStyles = makeStyles((theme) => ({
     text: {
         display: 'flex',
         justifyContent: 'center ',
-        //borderBottom: 'solid 1px white'
     }
 }))
