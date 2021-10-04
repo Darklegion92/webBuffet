@@ -1,7 +1,5 @@
-import CardLawyer from '@/components/cardLawyer'
-import CardServices from '@/components/cardServices'
 import Carousel from '@/components/carousel'
-import MissionVission from '@/components/missionVission'
+import MissionVision from '@/components/missionVision'
 import { useStyles } from './styles'
 
 
@@ -9,11 +7,9 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div className={classes.container}>
-            <Carousel />
+            {<Carousel />}
             <div className={classes.carousel} />
-            <MissionVission />
-            <CardServices />
-            <CardLawyer />
+            <MissionVision />
         </div>
     )
 }
