@@ -16,8 +16,11 @@ export const useStyles = makeStyles((theme) => ({
     },
     title: {
         textAlign: 'center',
-        marginBottom: 25,
         color: theme.palette.primary.main,
+        "&  .MuiCardHeader-title": {
+            fontSize: 40,
+            fontWeight: 'bold',
+        }
     }
 }
 ));

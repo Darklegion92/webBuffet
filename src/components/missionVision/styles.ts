@@ -18,7 +18,7 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        minHeight: 250,
+        minHeight: 350,
     },
     text: {
         color: theme.palette.primary.main,
