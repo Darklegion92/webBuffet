@@ -60,6 +60,15 @@ export const useStyles = makeStyles((theme) => ({
         },
 
     },
+    paperMenu: {
+        marginTop: 125,
+        marginLeft: 40,
+        "& .MuiMenu-paper": {
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.primary.contrastText,
+            },
+
+    },
     text: {
         display: 'flex',
         justifyContent: 'center ',

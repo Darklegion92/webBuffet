@@ -16,6 +16,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@material-ui/pickers": "^3.3.10",
+    "@mui/icons-material": "^5.0.3",
     "@mui/material": "^5.0.2",
     "@mui/styles": "^5.0.1",
     "@risingstack/react-easy-state": "^6.3.0",
