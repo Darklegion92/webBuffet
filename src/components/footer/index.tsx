@@ -10,10 +10,7 @@ const Footer = () => {
                     CONTACTAR <Icon className={classes.icon} >whatsapp</Icon>
                 </Typography>
                 <Typography variant="subtitle2" component="text" className={classes.text}>
-                    PRINCIPAL: C.C. LECS SEGUNDO PISO OFICINA 226<br />
-                </Typography>
-                <Typography variant="subtitle2" component="text" className={classes.text}>
-                    SEDE: AV 4 NO. 11-17 EDIFICIO BEN-HUR<br />
+                    PRINCIPAL: AV 4 NO. 11-17 EDIFICIO BEN-HUR<br />
                 </Typography>
                 <Typography variant="subtitle2" component="text" className={classes.text}>
                     CÚCUTA - NORTE DE SANTANDER
