@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import { BottomNavigation, BottomNavigationAction, Grid, Icon, IconButton, List, ListItemText, Menu, MenuItem, ListItemIcon, Typography, Collapse } from '@material-ui/core'
+import Link from 'next/link'
 import { ListItemButton } from '@mui/material';
+import { useRouter } from 'next/router'
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import { useStyles } from './styles'
 
 const Header = () => {
     const classes = useStyles()
+    const router = useRouter()
     const [anchorEl, setAnchorEl] = useState(null);
     const [openMovilSub, setOpenMovilSub] = useState(null);
     const [anchorElMovil, setAnchorElMovil] = useState(null);
-    // const openMovilSub = Boolean(anchorElMovilSub);
     const openMovil = Boolean(anchorElMovil);
     const open = Boolean(anchorEl);
 
@@ -34,10 +36,16 @@ const Header = () => {
     };
 
 
+    const onChangeLink = (event: React.SyntheticEvent, newValue: string) => {
+        router.push(newValue)
+    }
+
 
     return (
         <Grid container className={classes.root}>
-            <img src="/logo.png" className={classes.img} />
+            <Link href='/'>
+                <a className={classes.containerImg}> <img src="/logo.png" className={classes.img} /></a>
+            </Link>
             <Grid item xs={3} lg={2} className={classes.container}>
 
             </Grid>
@@ -65,11 +73,20 @@ const Header = () => {
                 <BottomNavigation
                     showLabels
                     className={`${classes.container} ${classes.hiddenMovil}`}
+                    onChange={onChangeLink}
                 >
-                    <BottomNavigationAction classes={{ label: classes.label }} label="INICIO" />
+                    <BottomNavigationAction
+                        classes={{ label: classes.label }}
+                        value="/"
+                        label="INICIO"
+                    />
                     <BottomNavigationAction classes={{ label: classes.label }} label="QUIENES SOMOS" />
                     <BottomNavigationAction classes={{ label: classes.label }} label="SERVICIOS" onClick={handleClickMovil} />
-                    <BottomNavigationAction classes={{ label: classes.label }} label="PROFESIONALES" />
+                    <BottomNavigationAction
+                        classes={{ label: classes.label }}
+                        value="/lawyers"
+                        label="PROFESIONALES"
+                    />
                 </BottomNavigation>
             </Grid>
             <Menu
@@ -79,18 +96,22 @@ const Header = () => {
                 onClose={handleClose}
                 anchorOrigin={{ horizontal: 100, vertical: 100 }}
             >
-                <MenuItem className={classes.text}>
-                    INICIO
-                </MenuItem>
-                <MenuItem className={classes.text}>
+                <Link href='/'>
+                    <MenuItem className={classes.text} onClick={handleClose}>
+                        INICIO
+                    </MenuItem>
+                </Link>
+                <MenuItem className={classes.text} onClick={handleClose}>
                     QUIENES SOMOS
                 </MenuItem>
-                <MenuItem className={classes.text}>
+                <MenuItem className={classes.text} onClick={handleClose}>
                     SERVICIOS
                 </MenuItem>
-                <MenuItem className={classes.text}>
-                    PROFESIONALES
-                </MenuItem>
+                <Link href='/lawyers'>
+                    <MenuItem className={classes.text} onClick={handleClose}>
+                        PROFESIONALES
+                    </MenuItem>
+                </Link>
             </Menu>
             <Menu
                 id="lock-menu"

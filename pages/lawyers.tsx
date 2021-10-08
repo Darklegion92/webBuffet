@@ -1,14 +1,14 @@
 import getSeoTitle from '@/util/getSeoTitle'
 import Head from 'next/head'
-import HomePage from '@/pages/home'
+import LawyersPage from '@/pages/lawyers'
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>{getSeoTitle('Inicio')}</title>
+        <title>{getSeoTitle('Profesionales')}</title>
       </Head>
-      <HomePage />
+      <LawyersPage />
     </>
   )
 }

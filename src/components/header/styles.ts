@@ -26,13 +26,19 @@ export const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
     },
-    img: {
+    containerImg: {
         position: 'absolute',
         left: 50,
         width: "150px",
         [theme.breakpoints.down("md")]: {
             width: "50px",
             left: 30,
+        }
+    },
+    img: {
+        width: "150px",
+        [theme.breakpoints.down("md")]: {
+            width: "50px",
         }
     },
     label: {
@@ -52,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
         }
     },
     paper: {
-        marginTop: 55,
+        marginTop: -60,
         "& .MuiMenu-paper": {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.contrastText,
@@ -66,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
         "& .MuiMenu-paper": {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.contrastText,
-            },
+        },
 
     },
     text: {

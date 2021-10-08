@@ -9,7 +9,6 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div className={classes.container}>
-            {<Carousel />}
             <div className={classes.carousel} />
             <MissionVision />
             <Company />
