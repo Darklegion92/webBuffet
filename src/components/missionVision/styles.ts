@@ -27,6 +27,7 @@ export const useStyles = makeStyles((theme) => ({
         }
     },
     paragraph: {
+        fontSize: 12,
         textAlign: 'justify',
         [theme.breakpoints.down("md")]: {
             fontSize: 12,
@@ -37,6 +38,10 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down("md")]: {
             fontSize: 20,
         }
+    },
+    cover: {
+        width: 200,
+        height: 350,
     }
 }
 ));

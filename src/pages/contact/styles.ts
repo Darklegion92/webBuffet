@@ -5,19 +5,24 @@ export const useStyles = makeStyles((theme) => ({
         minHeight: '80vh',
         padding: '0 25%',
         paddingTop: 430,
-    },
-    card: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
         marginBottom: 20,
     },
-    cardArea: {
+    form: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
+        width: '80%',
     },
-    cardMedia: {
-        width: '30%'
-    },
-    cardContent: {
-        width: '70%'
+    card: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 20,
+        margin: 20,
+        width: '60%',
     }
 }
 ));

@@ -10,8 +10,8 @@ const MissionVission = () => {
                 <Card>
                     <CardActionArea className={classes.card}>
                         <CardMedia
+                            className={classes.cover}
                             component="img"
-                            height="240"
                             image="/assets/images/mision.jpg"
                             alt="mision"
                         />
@@ -30,8 +30,8 @@ const MissionVission = () => {
                 <Card>
                     <CardActionArea className={classes.card}>
                         <CardMedia
+                            className={classes.cover}
                             component="img"
-                            height="240"
                             image="/assets/images/vision.jpg"
                             alt="mision"
                         />
