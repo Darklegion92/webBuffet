@@ -1,4 +1,4 @@
-import { Button, Card, CardActionArea, CardContent, CardMedia, TextField, Typography } from '@material-ui/core'
+import { Button, Card, CardActionArea, CardContent, CardMedia, Checkbox, FormControlLabel, TextField, Typography } from '@material-ui/core'
 import { Box } from '@mui/system'
 import { useStyles } from './styles'
 
@@ -20,26 +20,35 @@ const Lawyers = () => {
                     <TextField
                         id="outlined-error-helper-text"
                         label="Nombres"
-                        //helperText="*Campo obligatorio"
+                    //helperText="*Campo obligatorio"
                     />
                     <TextField
                         id="outlined-error-helper-text"
                         label="Teléfono"
-                        //helperText="*Campo obligatorio"
+                    //helperText="*Campo obligatorio"
                     />
                     <TextField
                         id="outlined-error-helper-text"
                         label="Correo"
-                        //helperText="*Campo obligatorio"
+                    //helperText="*Campo obligatorio"
                     />
                     <TextField
                         id="outlined-multiline-flexible"
                         multiline
                         minRows={4}
                         label="Mensaje"
-                        //helperText="*Campo obligatorio"
+                    //helperText="*Campo obligatorio"
                     />
-                    <Button variant="contained" color="primary" style={{marginTop: 20}}>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                name="terms"
+                                color="primary"
+                            />
+                        }
+                        label="Términos y condiciones"
+                    />
+                    <Button variant="contained" color="primary" style={{ marginTop: 20 }}>
                         Enviar
                     </Button>
                 </Box>
