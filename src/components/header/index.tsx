@@ -4,13 +4,14 @@ import Link from 'next/link'
 import { ListItemButton } from '@mui/material';
 import { useRouter } from 'next/router'
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
+import { services } from '@/util/dataStorage'
 import { useStyles } from './styles'
 
 const Header = () => {
     const classes = useStyles()
     const router = useRouter()
     const [anchorEl, setAnchorEl] = useState(null);
-    const [openMovilSub, setOpenMovilSub] = useState(null);
+    const [openMovilSub, setOpenMovilSub] = useState('');
     const [anchorElMovil, setAnchorElMovil] = useState(null);
     const openMovil = Boolean(anchorElMovil);
     const open = Boolean(anchorEl);
@@ -24,6 +25,7 @@ const Header = () => {
     };
 
     const handleClickMovil = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault()        
         setAnchorElMovil(event.currentTarget);
     };
 
@@ -31,12 +33,22 @@ const Header = () => {
         setAnchorElMovil(null);
     };
 
-    const handleClickMovilSub = () => {
-        setOpenMovilSub(!openMovilSub);
+    const handleClickMovilSub = (service: { name: string, subservices: string[] }) => {
+        if (service.name === openMovilSub) {
+            setOpenMovilSub('');
+        } else {
+            setOpenMovilSub(service.name);
+        }
+
+        if (service.subservices.length === 0) {
+            onChangeLink(null, `/services/${service.name}`)
+        }
     };
 
 
     const onChangeLink = (event: React.SyntheticEvent, newValue: string) => {
+        setAnchorEl(null);
+        setAnchorElMovil(null);
         router.push(newValue)
     }
 
@@ -128,27 +140,22 @@ const Header = () => {
                     component="nav"
                     aria-labelledby="nested-list-subheader"
                 >
-                    <ListItemButton>
-
-                        <ListItemText primary="SERVICIO 1" />
-                    </ListItemButton>
-                    <ListItemButton>
-                        <ListItemText primary="SERVICIO 2" />
-                    </ListItemButton>
-                    <ListItemButton onClick={() => handleClickMovilSub()}>
-                        <ListItemText primary="SERVICIO 3" />
-                        {openMovilSub ? <ExpandLess /> : <ExpandMore />}
-                    </ListItemButton>
-                    <Collapse in={openMovilSub} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
-                            <ListItemButton sx={{ pl: 4 }}>
-                                <ListItemText primary="SUBSERVICIO 1" />
+                    {services.map(service =>
+                        <>
+                            <ListItemButton onClick={() => handleClickMovilSub(service)} key={service.name}>
+                                <ListItemText primary={service.name} />
+                                {service.subservices.length > 0 && (openMovilSub === service.name ? <ExpandLess /> : <ExpandMore />)}
                             </ListItemButton>
-                            <ListItemButton sx={{ pl: 4 }}>
-                                <ListItemText primary="SUBSERVICIO 2" />
-                            </ListItemButton>
-                        </List>
-                    </Collapse>
+                            {service.subservices.length > 0 && <Collapse in={openMovilSub === service.name} timeout="auto" unmountOnExit>
+                                <List component="div" disablePadding key={service.name}>
+                                    {service.subservices.map(subservice =>
+                                        <ListItemButton key={subservice} sx={{ pl: 4 }} onClick={() => onChangeLink(null, `/services/${service.name}/${subservice}`)}>
+                                            <ListItemText primary={subservice} />
+                                        </ListItemButton>)}
+                                </List>
+                            </Collapse>}
+                        </>
+                    )}
                 </List>
             </Menu>
         </Grid >
