@@ -30,14 +30,13 @@ const Lawyers = () => {
                     <TextField
                         id="outlined-error-helper-text"
                         label="Correo"
-                    //helperText="*Campo obligatorio"
                     />
                     <TextField
                         id="outlined-multiline-flexible"
                         multiline
-                        minRows={4}
+                        className={classes.textArea}
+                        //minRows={4}
                         label="Mensaje"
-                    //helperText="*Campo obligatorio"
                     />
                     <FormControlLabel
                         control={
