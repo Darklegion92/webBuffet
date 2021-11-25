@@ -12,7 +12,7 @@ import { useStyles } from './styles'
 const Company = () => {
   const classes = useStyles()
   return (
-    <Grid container justifyContent='center' className={classes.container}>
+    <Grid container className={classes.container}>
       <Grid item xs={12} className={classes.gridItem}>
         <Card>
           <CardActionArea>
