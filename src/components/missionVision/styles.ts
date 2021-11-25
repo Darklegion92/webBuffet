@@ -12,7 +12,10 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     paddingRight: 30,
-    paddingLeft: 30
+    paddingLeft: 30,
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+    }
   },
   card: {
     display: 'flex',
