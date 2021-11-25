@@ -8,7 +8,7 @@ const Error404 = () => {
                 <Grid item style={{ display: 'flex', marginBottom: 10 }}>
                     <img
                         width="20%"
-                        src="/assets/images/flor.png"
+                        src="./assets/images/flor.png"
                     />
                 </Grid>
                 <Typography variant="h5" align="center">

@@ -18,7 +18,7 @@ const StoriesSection = () => {
                         <CardMedia
                             component="img"
                             height="240"
-                            image="/assets/images/mision.jpg"
+                            image="./assets/images/mision.jpg"
                             alt="mision"
                         />
                         <CardContent>
@@ -38,7 +38,7 @@ const StoriesSection = () => {
                         <CardMedia
                             component="img"
                             height="240"
-                            image="/assets/images/mision.jpg"
+                            image="./assets/images/mision.jpg"
                             alt="mision"
                         />
                         <CardContent>

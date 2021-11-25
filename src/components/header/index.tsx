@@ -56,7 +56,7 @@ const Header = () => {
     return (
         <Grid container className={classes.root}>
             <Link href='/'>
-                <a className={classes.containerImg}> <img src="/logo.png" className={classes.img} /></a>
+                <a className={classes.containerImg}> <img src="./logo.png" className={classes.img} /></a>
             </Link>
             <Grid item xs={3} lg={2} className={classes.container}>
 
@@ -109,18 +109,18 @@ const Header = () => {
                 anchorOrigin={{ horizontal: 100, vertical: 100 }}
             >
                 <Link href='/'>
-                    <MenuItem className={classes.text} onClick={handleClose}>
+                    <MenuItem key="0" className={classes.text} onClick={handleClose}>
                         INICIO
                     </MenuItem>
                 </Link>
-                <MenuItem className={classes.text} onClick={handleClose}>
+                <MenuItem key="1" className={classes.text} onClick={handleClose}>
                     QUIENES SOMOS
                 </MenuItem>
-                <MenuItem className={classes.text} onClick={handleClose}>
+                <MenuItem key="2" className={classes.text} onClick={handleClose}>
                     SERVICIOS
                 </MenuItem>
                 <Link href='/lawyers'>
-                    <MenuItem className={classes.text} onClick={handleClose}>
+                    <MenuItem key="3" className={classes.text} onClick={handleClose}>
                         PROFESIONALES
                     </MenuItem>
                 </Link>
@@ -140,9 +140,9 @@ const Header = () => {
                     component="nav"
                     aria-labelledby="nested-list-subheader"
                 >
-                    {services.map(service =>
+                    {services.map((service, key) =>
                         <>
-                            <ListItemButton onClick={() => handleClickMovilSub(service)} key={service.name}>
+                            <ListItemButton key={key} onClick={() => handleClickMovilSub(service)} key={service.name}>
                                 <ListItemText primary={service.name} />
                                 {service.subservices.length > 0 && (openMovilSub === service.name ? <ExpandLess /> : <ExpandMore />)}
                             </ListItemButton>

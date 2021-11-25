@@ -24,7 +24,7 @@ const Footer = () => {
             <Grid item xs={3} lg={2}>
                 <Link href='/'>
                     <a>
-                        <img src="/logo.png" className={classes.logo} />
+                        <img src="./logo.png" className={classes.logo} />
                     </a>
                 </Link>
             </Grid>

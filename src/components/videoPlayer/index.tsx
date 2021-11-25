@@ -7,7 +7,7 @@ const Carousel = () => {
 
         <div className={classes.header} >
             <video loop autoPlay muted>
-                <source src="/assets/videos/video.mp4" type="video/mp4" />
+                <source src="./assets/videos/video.mp4" type="video/mp4" />
             </video>
         </div>
     )
