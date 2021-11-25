@@ -18,8 +18,8 @@ const Carousel = () => {
                 timeout={700}
                 indicators={false}
             >
-                <img src="./assets/images/slider1.jpg" width="100%" />
-                <img src="./assets/images/slider1.jpg" width="100%" />
+                <img src="/assets/images/slider1.jpg" width="100%" />
+                <img src="/assets/images/slider1.jpg" width="100%" />
             </CarouselMaterial>
         </>
     )

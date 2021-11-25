@@ -12,7 +12,7 @@ const MissionVission = () => {
                         <CardMedia
                             className={classes.cover}
                             component="img"
-                            image="./assets/images/mision.jpg"
+                            image="/assets/images/mision.jpg"
                             alt="mision"
                         />
                         <CardContent>
@@ -32,7 +32,7 @@ const MissionVission = () => {
                         <CardMedia
                             className={classes.cover}
                             component="img"
-                            image="./assets/images/vision.jpg"
+                            image="/assets/images/vision.jpg"
                             alt="mision"
                         />
                         <CardContent>

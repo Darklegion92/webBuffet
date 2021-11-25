@@ -9,7 +9,6 @@ import {
   ListItemText,
   Menu,
   MenuItem,
-  ListItemIcon,
   Typography,
   Collapse
 } from '@material-ui/core'
@@ -72,7 +71,7 @@ const Header = () => {
       <Link href='/'>
         <a className={classes.containerImg}>
           {' '}
-          <img src='./logo.png' className={classes.img} />
+          <img src='/logo.png' className={classes.img} />
         </a>
       </Link>
       <Grid item xs={3} lg={2} className={classes.container}></Grid>

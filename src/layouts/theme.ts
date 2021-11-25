@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 const primaryColor = '#8d292b'
 export const MuiTheme = createTheme({
     palette: {
@@ -6,7 +6,6 @@ export const MuiTheme = createTheme({
             main: primaryColor,
             contrastText: "#fff",
             light: 'rgba(141,41,43,0.31)',
-
         },
         secondary: {
             main: '#fc2a35', contrastText: "#fff"
@@ -21,7 +20,7 @@ export const MuiTheme = createTheme({
             fontSize: 12,
         }
     },
-    overrides: {
+    /*overrides: {
         MuiCssBaseline: {
             '@global': {
                 '::-webkit-scrollbar': {
@@ -98,5 +97,5 @@ export const MuiTheme = createTheme({
                 // }
             },
         }
-    }
+    }*/
 })
