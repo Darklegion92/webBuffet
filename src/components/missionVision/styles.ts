@@ -8,19 +8,20 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   gridItem: {
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      paddingRight: 30,
-      paddingLeft: 30
-    }
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingRight: 30,
+    paddingLeft: 30
   },
   card: {
     display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    minHeight: 350
+    flexDirection: 'column',
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      minHeight: 350
+    }
   },
   text: {
     color: theme.palette.primary.main,
@@ -42,7 +43,9 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   cover: {
-    width: 200,
-    height: 350
+    [theme.breakpoints.up('md')]: {
+      width: 200,
+      height: 350
+    }
   }
 }))
