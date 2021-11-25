@@ -5,7 +5,7 @@ import { useStyles } from './styles'
 const StoriesSection = () => {
     const classes = useStyles()
     return (
-        <Grid container justifyContent="center" className={classes.container}>
+        <Grid container className={classes.container}>
             <Grid item xs={12}>
                 <Typography variant="h2" component="div" className={classes.title} >
                     CASOS DE EXITO
